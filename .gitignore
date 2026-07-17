@@ -1,0 +1,14 @@
+node_modules
+.env
+.env.local
+*.apk
+*.aab
+*.jks
+*.p12
+*.keystore
+dist
+build
+.DS_Store
+Thumbs.db
+npm-debug.log
+yarn-error.log

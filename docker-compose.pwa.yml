@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  openclaw-pwa:
+    image: yurilord/cyberclawai:latest
+    build:
+      context: .
+      dockerfile: Dockerfile.pwa
+    container_name: cyber-claw-ai
+    ports:
+      - "80:80"
+      - "8080:80"
+    restart: unless-stopped
+    labels:
+      - "app=cyber-claw-ai"
+      - "theme=cyberpunk-neon"
+      - "author=yuri-lord"
